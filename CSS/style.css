@@ -1,5 +1,5 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css");
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 *{
   box-sizing: border-box;
@@ -30,6 +30,11 @@
     display: block;
 }
 
+img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
 .investigacion__text {
     display: flex;
     flex-direction: column;
@@ -94,4 +99,18 @@ Cuando estemos con el cursor encima del elemento los estilos seran
 
 .btn-menu{
     display: none;
+}
+
+.solutions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.solutions__cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
 }
