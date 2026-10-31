@@ -1,20 +1,109 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css");
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    --blanco:white;
+    --negro:black;
+    --nav_header:#F5F5F5;
+}
+
+/*Generales*/
 
 *{
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: "inter", sans-serif;
+  color: var(--negro);
   margin: 0;
   padding: 0;
 }
+
+/*Etiquetas*/
+
 main{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 1200 px;
-    width: 70%;
+    width: 2000 px;
+    padding: 20px 60px;
 }
+
+a{
+    text-decoration: none;
+    color: var(--negro)
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 72px;
+    padding: 0 24px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: var(--blanco);
+}
+
+nav{
+    display: flex;
+    gap: 24px;
+}
+
+section{
+    margin: 40px 0px 0px
+}
+
+nav a{
+    font-size: 13px;
+}
+
+
+
+/*secction Header*/
+
+.header__icon{
+
+}
+
+.header__options{
+    font-size: 13px;
+    margin-right: auto;
+    padding-left: 32px;
+}
+
+.header-actions{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    font-size: 14px;
+}
+
+.header-actions__a{
+    background-color: var(--negro);
+    color: var(--blanco);
+    padding:10px;
+    border-radius: 20px;
+}
+
+.header-actions__btn{
+    background: var(--nav_header);
+    border:none;
+    padding:10px;
+    border-radius: 50px;
+}
+
+.header-actions__btn a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
+/*secction Investigacion*/
+
 .section__investigacion {
     display: flex;
     flex-direction: row;
@@ -23,10 +112,6 @@ main{
     gap: 40px;
     width: 100%;
 }
-section{
-    margin: 40px 0px 0px
-}
-
 .conteiner__text__investigacion {
     flex: 1;
 }
@@ -41,83 +126,58 @@ section{
     display: block;
 }
 
-img{
-    width: 100%;
-    height: auto;
-    display: block;
-}
+
 .investigacion__text {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
+
+.investigacion__text__top{
+    font-size: 13px;
+}
+
+.investigacion__text__tittle{
+    font-size: 60px;
+    font-weight: 400;
+}
+
+.investigacion__text__description{
+    font-size: 17px;
+}
+
+.investigacion__btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 14px;
+
+}
+.investigacion__a_comunicate{
+    background: var(--nav_header);
+    border:none;
+    padding:10px;
+    border-radius: 50px;
+
+}
+
+.investigacion__a_chatGPT{
+    background-color: var(--negro);
+    color: var(--blanco);
+    padding:10px;
+    border-radius: 20px;
+}
+.bi-arrow-up-right{
+    color:var(--blanco);
+}
+
+
 .solutions__cards div{
     background:gainsboro;
     padding:20px;
     margin: 20px;
-
-
 }
 
-
-
-
-
-/*ver desde aca
-*/
-
-
-a{
-    text-decoration: none;
-    color: white
-}
-
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 72px;
-    padding: 0 24px;
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    background-color: #1C1F25
-}
-
-nav{
-    display: flex;
-    gap: 24px;
-}
-
-/* Las anclas que sean hijas del nav */
-nav a{
-    font-size: 13px;
-}
-
-.btn-login{
-    background-color: #222733;
-    border: 1px solid #2B303C;
-    border-radius: 8px;
-    padding: 12px 20px;
-    font-size: 13px;
-}
-
-/* 
-Cuando estemos con el cursor encima del elemento los estilos seran 
-*/
-.btn-login:hover{
-    background-color: #283044;
-    border: 1px solid #373E52;
-}
-
-.icon svg{
- /*    width: 107px;
-    height: 32px; */
-}
-
-.btn-menu{
-    display: none;
-}
 
 .solutions{
     display: flex;
@@ -131,9 +191,4 @@ Cuando estemos con el cursor encima del elemento los estilos seran
     flex-direction: row;
     justify-content: center;
 
-}
-.ancla_card{
-    background: black;
-    color: white;
-    border-radius: 50px;
 }
