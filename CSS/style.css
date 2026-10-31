@@ -5,6 +5,9 @@
     --blanco:white;
     --negro:black;
     --nav_header:#F5F5F5;
+    --gris_tarjeta:#F5F5F5;
+    --idioma_footer:#979090;
+    --btn_footer:#F1F1F1;
 }
 
 /*Generales*/
@@ -23,8 +26,9 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    width: 2000 px;
+    width: 2000px;
+    width: 100%;
+    margin: 0 auto;
     padding: 20px 60px;
 }
 
@@ -56,6 +60,12 @@ section{
 
 nav a{
     font-size: 13px;
+}
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
 }
 
 
@@ -116,7 +126,7 @@ nav a{
     flex: 1;
 }
 
-.section__investigacion > div:last-child {
+.conteiner__img__investigacion {
     flex: 1;
 }
 
@@ -151,6 +161,7 @@ nav a{
     flex-direction: row;
     justify-content: space-between;
     font-size: 14px;
+    margin-top: auto;
 
 }
 .investigacion__a_comunicate{
@@ -171,24 +182,119 @@ nav a{
     color:var(--blanco);
 }
 
-
-.solutions__cards div{
-    background:gainsboro;
-    padding:20px;
-    margin: 20px;
-}
-
+/*secction Solutions*/
 
 .solutions{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+}
 
+.solutions__text{
+    font-size: 17px;
+    margin: 10px 200px;
+}
+.solutions__tittle{
+    font-size: 45px;
 }
 
 .solutions__cards{
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+
+.solutions__cards__chatGPT{
+    flex:1
+}
+.solutions__cards__investigación_fondo{
+    flex:1
+}
+
+.solutions__cards__Recuperación_conocimiento{
+    flex:1
+}
+
+.solutions__cards__tittle{
+    font-size: 22px;
+    padding: 10px;
 
 }
+.solutions__cards__text{
+    font-size: 14px;
+    padding: 10px;
+
+}
+.solutions__cards__ul{
+    font-size: 14px;
+    padding: 10px;
+
+}
+
+
+.solutions__cards__a{
+    display: block;
+    width: 100%;
+    background-color: var(--negro);
+    color: var(--blanco);
+    padding:10px;
+    border-radius: 20px;
+    margin-top: auto;
+    align-self: center;
+    text-align: center;
+    font-size: 14px;
+    
+}
+.solutions__cards div{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background: var(--gris_tarjeta);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+/*secction footer*/
+
+.conteiner_footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 20px;
+    margin: 10px 20px;;
+}
+
+
+.footer__icons {
+    display: flex;
+    gap: 20px;
+}
+
+.footer__copy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 13px;
+}
+
+.footer__copy_button{
+    border: none;
+    background: none;
+    text-decoration: underline;
+    text-decoration-color: var(--idioma_footer);
+}
+
+.footer__idioma{
+    display: flex;
+    gap: 10px;
+    font-size: 14px;
+    background: var(--btn_footer);
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+ .footer__idioma_selected{
+    color: var(--idioma_footer);
+ }
