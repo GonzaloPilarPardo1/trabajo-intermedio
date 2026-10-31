@@ -132,3 +132,8 @@ Cuando estemos con el cursor encima del elemento los estilos seran
     justify-content: center;
 
 }
+.ancla_card{
+    background: black;
+    color: white;
+    border-radius: 50px;
+}
