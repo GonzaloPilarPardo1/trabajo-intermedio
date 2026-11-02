@@ -26,7 +26,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 2000px;
+    width: 1440px;
     width: 100%;
     margin: 0 auto;
     padding: 20px 60px;
@@ -75,10 +75,14 @@ img {
 .header__icon{
 
 }
-
 .header__options{
-    font-size: 13px;
     margin-right: auto;
+}
+.header__options__items{
+    display: flex;
+    gap:20px;
+    justify-content: start;
+    font-size: 13px;
     padding-left: 32px;
 }
 
@@ -89,6 +93,12 @@ img {
     align-items: center;
     gap:20px;
     font-size: 14px;
+}
+.header__options__btn_search{
+    display:flex;
+    gap: 10px;
+    background: transparent;
+    border:none;
 }
 
 .header-actions__a{
@@ -111,8 +121,11 @@ img {
     gap: 8px;
 }
 
-.header__icon_collapse{
+.header__btn_collapse{
     display: none;
+    gap: 10px;
+    background: transparent;
+    border:none;
 }
 
 
@@ -122,12 +135,15 @@ img {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     gap: 40px;
     width: 100%;
 }
 .conteiner__text__investigacion {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .conteiner__img__investigacion {
@@ -158,6 +174,7 @@ img {
 
 .investigacion__text__description{
     font-size: 17px;
+    margin: 30px;
 }
 
 .investigacion__btn{
@@ -165,7 +182,6 @@ img {
     flex-direction: row;
     justify-content: space-between;
     font-size: 14px;
-    margin-top: auto;
 
 }
 .investigacion__a_comunicate{
@@ -304,20 +320,41 @@ img {
  }
 
 @media (max-width: 1248px) {
-    .header__options{
+    .header__options__items{
         display: none;
     }
-    .header__icon_collapse{
+    .header__btn_collapse{
         display: flex;
+        margin-left: 10px;
     }
-    .header-actions__btn{
-   
-    }
-    .bi-search{
-        display:flex;
-    }
+    .header__options {
 
+        flex: 1;
+    }
+    
+    .header__options__btn_search {
+        margin-left: auto;
+        margin-right: 10px;
+    }
+    .investigacion__btn{
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .investigacion__a_chatGPT{
+        margin: 10px;
+        text-align: center;
+    }
+    .investigacion__a_comunicate{
+        margin: 10px;
+        text-align: center;
+    }
+    .investigacion__text__tittle{
+        font-size: 58px;
+        font-weight: 400;
+    }
 }
+
 
 @media (max-width: 768px) {
 
