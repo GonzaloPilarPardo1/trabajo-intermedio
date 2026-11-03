@@ -26,7 +26,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 1440px;
+    max-width: 1440px;
     width: 100%;
     margin: 0 auto;
     padding: 20px 60px;
@@ -42,11 +42,22 @@ header{
     justify-content: space-between;
     align-items: center;
     height: 72px;
-    padding: 0 24px;
+    padding: 0 32px;
     position: sticky;
     top: 0;
     z-index: 10;
     background-color: var(--blanco);
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px 32px;
+}
+
+footer{
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px 32px;
 }
 
 nav{
@@ -66,6 +77,10 @@ img {
     height: auto;
     display: block;
     border-radius: 5px;
+}
+
+li{
+    line-height:20px;
 }
 
 
@@ -104,14 +119,14 @@ img {
 .header-actions__a{
     background-color: var(--negro);
     color: var(--blanco);
-    padding:10px;
+    padding:8px;
     border-radius: 20px;
 }
 
 .header-actions__btn{
     background: var(--nav_header);
     border:none;
-    padding:10px;
+    padding:8px;
     border-radius: 50px;
 }
 
@@ -156,7 +171,6 @@ img {
     display: block;
 }
 
-
 .investigacion__text {
     display: flex;
     flex-direction: column;
@@ -174,7 +188,7 @@ img {
 
 .investigacion__text__description{
     font-size: 17px;
-    margin: 30px;
+    margin: 30px 0px;
 }
 
 .investigacion__btn{
@@ -189,7 +203,6 @@ img {
     border:none;
     padding:10px;
     border-radius: 50px;
-
 }
 
 .investigacion__a_chatGPT{
@@ -209,6 +222,7 @@ img {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    margin:100px;
 }
 
 .solutions__text{
@@ -249,9 +263,11 @@ img {
 .solutions__cards__ul{
     font-size: 14px;
     padding: 10px;
-
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 50px;
 }
-
 
 .solutions__cards__a{
     display: block;
@@ -264,15 +280,14 @@ img {
     align-self: center;
     text-align: center;
     font-size: 14px;
-    
 }
 .solutions__cards div{
     display: flex;
     flex-direction: column;
     flex: 1;
     background: var(--gris_tarjeta);
-    padding: 20px;
-    margin: 20px;
+    padding: 10px;
+    margin: 10px;
     border-radius: 5px;
 }
 
