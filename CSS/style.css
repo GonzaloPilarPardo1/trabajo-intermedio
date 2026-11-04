@@ -430,7 +430,7 @@ li{
     }
  }
 
-  @media (max-width: 1000px) {
+@media (max-width: 1000px) {
     .investigacion__text__tittle{
         font-size: 46px;
     }
