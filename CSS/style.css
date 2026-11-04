@@ -4,10 +4,11 @@
 :root{
     --blanco:white;
     --negro:black;
+    --negro_hov:#575555;
     --nav_header:#F5F5F5;
+    --nav_header_hov:#d4d3d3;
     --gris_tarjeta:#F5F5F5;
     --idioma_footer:#979090;
-    --btn_footer:#F1F1F1;
 }
 
 /*Generales*/
@@ -128,6 +129,20 @@ li{
     border:none;
     padding:8px;
     border-radius: 50px;
+    transition: 150ms;
+}
+
+.header-actions__btn:hover{
+    background: var(--nav_header_hov);
+    transition: 300ms;
+}
+
+.header-actions__btn .bi-chevron-down {
+    transition: transform 0.3s ease;
+}
+
+.header-actions__btn:hover .bi-chevron-down {
+    transform: rotate(180deg);
 }
 
 .header-actions__btn a {
@@ -198,21 +213,34 @@ li{
     font-size: 14px;
 
 }
-.investigacion__a_comunicate{
-    background: var(--nav_header);
-    border:none;
-    padding:10px;
-    border-radius: 50px;
-}
 
 .investigacion__a_chatGPT{
     background-color: var(--negro);
     color: var(--blanco);
     padding:10px;
     border-radius: 20px;
+    transition:150ms;
 }
 .bi-arrow-up-right{
     color:var(--blanco);
+}
+
+.investigacion__a_chatGPT:hover{
+    background-color: var(--negro_hov);
+    transition:300ms;
+}
+
+.investigacion__a_comunicate{
+    background: var(--nav_header);
+    border:none;
+    padding:10px;
+    border-radius: 50px;
+    transition:300ms;
+}
+
+.investigacion__a_comunicate:hover{
+    background: var(--nav_header_hov);
+    transition:300ms;
 }
 
 /*secction Solutions*/
@@ -276,6 +304,12 @@ li{
     align-self: center;
     text-align: center;
     font-size: 14px;
+    transition:300ms;
+}
+
+.solutions__cards__a:hover{
+    background-color: var(--negro_hov);
+    transition:300ms;
 }
 
 .solutions__cards div{
@@ -323,9 +357,13 @@ li{
     display: flex;
     gap: 10px;
     font-size: 14px;
-    background: var(--btn_footer);
+    background: var(--nav_header);
     padding: 5px 10px;
     border-radius: 20px;
+}
+
+.footer__idioma:hover{
+    background: var(--nav_header_hov);
 }
 
 .footer__idioma_selected{
