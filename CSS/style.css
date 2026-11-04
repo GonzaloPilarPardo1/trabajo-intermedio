@@ -216,7 +216,6 @@ li{
     flex-direction: row;
     justify-content: space-between;
     font-size: 14px;
-
 }
 
 .investigacion__a_chatGPT{
@@ -226,6 +225,7 @@ li{
     border-radius: 20px;
     transition:150ms;
 }
+
 .bi-arrow-up-right{
     color:var(--blanco);
 }
@@ -324,8 +324,7 @@ li{
     background: var(--gris_tarjeta);
     padding: 10px;
     border-radius: 5px;
-    flex: 1 1 238px;
-    min-width: 238px;
+    flex: 1 1 197px;
 }
 
 /*secction footer*/
@@ -470,9 +469,13 @@ li{
     .solutions__tittle{
         font-size: 37px;
     }
+    .solutions__cards .solutions__cards__Recuperación_conocimiento {
+        flex: 0 1 300px;
+    }
     .solutions__cards{
         justify-content: flex-start;
     }
+
 }
 
 @media (max-width: 700px) {
