@@ -27,3 +27,5 @@ Algunas decisiones tomadas durante el desarrollo:
 ## Media Queries
 
 Para adaptar el diseño a distintos dispositivos, utilicé *media queries* tomando como referencia los valores responsive de la página original.
+
+![Media queries](./MQ.png)

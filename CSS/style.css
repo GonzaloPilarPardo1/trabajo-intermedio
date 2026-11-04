@@ -66,7 +66,7 @@ nav{
 }
 
 section{
-    margin: 40px 0px 0px
+    margin: 50px auto;
 }
 
 nav a{
@@ -188,7 +188,7 @@ li{
 
 .investigacion__text__description{
     font-size: 17px;
-    margin: 30px 0px;
+    margin: 20px 0px;
 }
 
 .investigacion__btn{
@@ -222,45 +222,40 @@ li{
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin:100px;
+    margin:0 auto;
 }
 
-.solutions__text{
-    font-size: 17px;
-    margin: 10px 200px;
-}
 .solutions__tittle{
     font-size: 45px;
     font-weight: 400;
+}
+
+.solutions__text{
+    display: flex;
+    font-size: 17px;
+    gap:50px;
+    max-width: 600px;
+    margin: 20px 0px;
+    text-align:center;
 }
 
 .solutions__cards{
     display: flex;
     flex-direction: row;
     justify-content: center;
-}
-
-.solutions__cards__chatGPT{
-    flex:1
-}
-.solutions__cards__investigación_fondo{
-    flex:1
-}
-
-.solutions__cards__Recuperación_conocimiento{
-    flex:1
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .solutions__cards__tittle{
     font-size: 22px;
     padding: 10px;
-
 }
 .solutions__cards__text{
     font-size: 14px;
     padding: 10px;
-
 }
+
 .solutions__cards__ul{
     font-size: 14px;
     padding: 10px;
@@ -282,14 +277,16 @@ li{
     text-align: center;
     font-size: 14px;
 }
+
 .solutions__cards div{
     display: flex;
     flex-direction: column;
     flex: 1;
     background: var(--gris_tarjeta);
     padding: 10px;
-    margin: 10px;
     border-radius: 5px;
+    flex: 1 1 238px;
+    min-width: 238px;
 }
 
 /*secction footer*/
@@ -429,6 +426,9 @@ li{
     }
     .solutions__tittle{
         font-size: 37px;
+    }
+    .solutions__cards{
+        justify-content: flex-start;
     }
 }
 
