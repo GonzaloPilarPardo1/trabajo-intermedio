@@ -124,6 +124,11 @@ li{
     border-radius: 20px;
 }
 
+.header-actions__a:hover{
+    background-color: var(--negro_hov);
+}
+
+
 .header-actions__btn{
     background: var(--nav_header);
     border:none;
