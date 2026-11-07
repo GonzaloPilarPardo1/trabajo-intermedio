@@ -173,7 +173,10 @@ li{
     align-items: stretch;
     gap: 40px;
     width: 100%;
+    position: relative;
+    height: 700px;
 }
+
 .conteiner__text__investigacion {
     flex: 1;
     display: flex;
@@ -186,9 +189,12 @@ li{
 }
 
 .section__investigacion img {
+    align-items: end;
     width: 100%;
     height: auto;
     display: block;
+    position: sticky;
+    top: -72px;
 }
 
 .investigacion__text {
@@ -283,6 +289,7 @@ li{
 .solutions__cards__tittle{
     font-size: 22px;
     padding: 10px;
+    font-weight: 400 ;
 }
 .solutions__cards__text{
     font-size: 14px;
@@ -409,7 +416,7 @@ li{
     }
 }
 
- @media (max-width: 1240px) {
+@media (max-width: 1240px) {
         .investigacion__btn{
         flex-direction: column;
         align-items: center;
@@ -429,8 +436,15 @@ li{
     .solutions__tittle{
         font-size: 44px;
     }
- }
+}
 
+@media(max-width:1150px){
+
+    .section__investigacion img {
+    position: static;
+}
+
+}
 @media (max-width: 1000px) {
     .investigacion__text__tittle{
         font-size: 46px;
@@ -439,9 +453,9 @@ li{
         font-size: 41px;
     }
     .solutions__text{
-       padding: 0 auto;
+        padding: 0 auto;
     }
- }
+}
 
 @media (max-width: 780px) {
     .footer__copy{
@@ -459,6 +473,7 @@ li{
 @media (max-width: 752px) {
     .section__investigacion{
         flex-direction: column;
+        height: auto
     }
     .investigacion__text__tittle{
         font-size: 43px;
