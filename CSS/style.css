@@ -9,6 +9,7 @@
     --nav_header_hov:#d4d3d3;
     --gris_tarjeta:#F5F5F5;
     --idioma_footer:#979090;
+    --rel1px: 0.069444vw; /*Unidad Relativa de tamaño. Ver Readme.MD*/
 }
 
 /*Generales*/
@@ -174,7 +175,7 @@ li{
     gap: 40px;
     width: 100%;
     position: relative;
-    height: 700px;
+    height:clamp(500px, calc(700* var(--rel1px)),700px);
 }
 
 .conteiner__text__investigacion {
@@ -189,12 +190,10 @@ li{
 }
 
 .section__investigacion img {
-    align-items: end;
+    align-items:flex-end;
     width: 100%;
     height: auto;
     display: block;
-    position: sticky;
-    top: -72px;
 }
 
 .investigacion__text {
@@ -208,7 +207,7 @@ li{
 }
 
 .investigacion__text__tittle{
-    font-size: 60px;
+    font-size: clamp(32px, calc(60 * var(--rel1px)), 60px);
     font-weight: 400;
 }
 
@@ -265,15 +264,16 @@ li{
 }
 
 .solutions__tittle{
-    font-size: 45px;
+    font-size:clamp(32px, calc(45 * var(--rel1px)), 45px);
     font-weight: 400;
+    text-align: center;
 }
 
 .solutions__text{
     display: flex;
     font-size: 17px;
     gap:50px;
-    max-width: 600px;
+    max-width: clamp(400px, calc(600 * var(--rel1px)), 600px);
     margin: 20px 0px;
     text-align:center;
 }
@@ -381,18 +381,17 @@ li{
 
 .footer__idioma_selected{
     color: var(--idioma_footer);
- }
+}
 
  /*Media Queries*/
 
- @media (max-width: 1300px) {
-    .investigacion__text__tittle{
-        font-size: 58px;
-    }
-    .solutions__tittle{
-        font-size: 44px;
+ @media (max-width: 1600px) {
+    .section__investigacion img {
+    position: sticky;
+    top: -72px;
     }
  }
+
 
 @media (max-width: 1247px) {
     .header__options__items{
@@ -410,10 +409,6 @@ li{
         margin-left: auto;
         margin-right: 10px;
     }
-    .investigacion__text__tittle{
-        font-size: 58px;
-        font-weight: 400;
-    }
 }
 
 @media (max-width: 1240px) {
@@ -430,28 +425,20 @@ li{
         margin: 10px;
         text-align: center;
     }
-    .investigacion__text__tittle{
-        font-size: 56px;
-    }
-    .solutions__tittle{
-        font-size: 44px;
-    }
 }
 
 @media(max-width:1150px){
 
     .section__investigacion img {
     position: static;
-}
+    margin-top: auto;
+    }
+    .section__investigacion {
+    height:auto;
+    }
 
 }
 @media (max-width: 1000px) {
-    .investigacion__text__tittle{
-        font-size: 46px;
-    }
-    .solutions__tittle{
-        font-size: 41px;
-    }
     .solutions__text{
         padding: 0 auto;
     }
@@ -475,16 +462,10 @@ li{
         flex-direction: column;
         height: auto
     }
-    .investigacion__text__tittle{
-        font-size: 43px;
-    }
     .investigacion__btn{
         flex-direction: row;
         justify-content: center;
         margin: 0 auto;
-    }
-    .solutions__tittle{
-        font-size: 37px;
     }
     .solutions__cards .solutions__cards__Recuperación_conocimiento {
         flex: 0 1 50%;
@@ -523,14 +504,6 @@ li{
     }
 }
 
-@media (max-width: 400px) {
-    .investigacion__text__tittle{
-        font-size: 32px;
-    }
-    .solutions__tittle{
-        font-size: 32px;
-    }
-}
 
 
 
