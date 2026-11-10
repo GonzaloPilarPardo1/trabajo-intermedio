@@ -38,3 +38,8 @@ supongo que en la practica diaria estan hechas con otra tecnologia.
 Para adaptar el diseño a distintos dispositivos, utilicé *media queries* tomando como referencia los valores responsive de la página original.
 
 ![Media queries](./MQ.png)
+
+
+![Gonzalo Pilar Partdo][Foto] Gonzalo Pilar Pardo
+
+[Foto]:https://github.com/GonzaloPilarPardo1/Informacion_personal/blob/main/Foto%20GPP%2050x50.png
